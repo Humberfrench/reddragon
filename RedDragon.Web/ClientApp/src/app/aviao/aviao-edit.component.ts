@@ -1,5 +1,9 @@
 import { Component, Inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from "@angular/router";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { first } from "rxjs/operators";
+//import { User } from "../../model/user.model";
 
 @Component({
   selector: 'app-aviao-edit',
@@ -13,7 +17,7 @@ import { HttpClient } from '@angular/common/http';
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string, id: number)
   {
-    http.get<Aviao>(baseUrl + 'aviao/' + id).subscribe(result =>
+    http.get<Aviao>(baseUrl + 'aviao/' + '1').subscribe(result =>
     {
       this.aviao = result;
     }, error => console.error(error));
