@@ -9,7 +9,7 @@ using RedDragon.Domain.Inteface.Repository;
 using RedDragon.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace RedDragon.Repository.Repository
+namespace RedDragon.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {

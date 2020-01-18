@@ -1,6 +1,8 @@
 ﻿using RedDragon.Domain.Entity;
+using RedDragon.Domain.Inteface.Repository;
+using RedDragon.Domain.Inteface.Service;
 
-namespace Fred.Services
+namespace RedDragon.Services
 {
     public class AviaoService:BaseService<Aviao>, IAviaoService
     {

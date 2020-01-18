@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RedDragon.Application\RedDragon.Application.csproj" />
+    <ProjectReference Include="..\RedDragon.Domain\RedDragon.Domain.csproj" />
+    <ProjectReference Include="..\RedDragon.Repository\RedDragon.Repository.csproj" />
+    <ProjectReference Include="..\RedDragon.Services\RedDragon.Services.csproj" />
+  </ItemGroup>
+
+</Project>

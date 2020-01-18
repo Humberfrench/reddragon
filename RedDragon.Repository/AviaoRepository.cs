@@ -3,7 +3,7 @@ using RedDragon.Domain.Entity;
 using RedDragon.Domain.Inteface.Repository;
 using RedDragon.Repository.Interfaces;
 
-namespace RedDragon.Repository.Repository
+namespace RedDragon.Repository
 {
     public class AviaoRepository : BaseRepository<Aviao>, IAviaoRepository
     {

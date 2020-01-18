@@ -1,0 +1,5 @@
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Ioc.deps.json
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Ioc.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfo.cs

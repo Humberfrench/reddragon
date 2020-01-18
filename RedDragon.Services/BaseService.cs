@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Fred.Domain.Inteface.Repository;
-using Fred.Domain.Inteface.Service;
+using RedDragon.Domain.Inteface.Repository;
+using RedDragon.Domain.Inteface.Service;
 
-namespace Fred.Services
+namespace RedDragon.Services
 {
 
     public class BaseService<TEntity> : IDisposable, IBaseService<TEntity> where TEntity : class
