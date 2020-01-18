@@ -17,7 +17,7 @@ namespace RedDragon.Repository.Context
         {
         }
        
-        public DbSet<Aviao> Banco { get; set; }
+        public DbSet<Aviao> Aviao { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

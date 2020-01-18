@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace RedDragon.Api
 {
+    using static Ioc.Bootstraper;
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -26,6 +27,9 @@ namespace RedDragon.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
+            //container IOC and Contexts
+            Initializer(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

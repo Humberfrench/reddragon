@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using RedDragon.Repository.Interfaces;
 
 namespace RedDragon.Repository.Context
@@ -7,11 +8,16 @@ namespace RedDragon.Repository.Context
     {
         private const string CONTEXT_KEY = "ContextManager.Context";
         private readonly IHttpContextAccessor context;
+        private readonly IConfiguration configuration;
 
-        public ContextManager(IHttpContextAccessor context)
+        public ContextManager(IHttpContextAccessor context, 
+                              IConfiguration configuration)
         {
             this.context = context;
+            this.configuration = configuration;
         }
+
+        public string GetConnectionString => configuration.GetConnectionString("RedDragonContext");
 
         public RedDragonContext GetContext()
         {

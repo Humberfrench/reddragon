@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using System;
 
 namespace RedDragon.Ioc
@@ -8,15 +9,33 @@ namespace RedDragon.Ioc
     using Domain.Inteface.Service;
     using Domain.Inteface.Repository;
     using Repository;
+    using Repository.Context;
+    using Repository.Interfaces;
+    using Repository.UnitOfWork;
     using Services;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.AspNetCore.Http;
+
     public static class Bootstraper
     {
-        public static void Initializer(IServiceCollection services)
+        public static void Initializer(IServiceCollection services, IConfiguration configuration)
         {
+
+            
             //Services
-            services.AddScoped<IAviaoServiceApp, AviaoServiceApp>();
-            services.AddScoped<IAviaoService, AviaoService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<IContextManager, ContextManager>();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            //services.AddScoped<IConfiguration, ConfigurationSection>();
+            //services.AddScoped<IConfiguration, ConfigurationRoot>();
+            //services.AddScoped<IConfigurationProvider, ConfigurationProvider>();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IAviaoRepository, AviaoRepository>();
+            services.AddScoped<IAviaoService, AviaoService>();
+            services.AddScoped<IAviaoServiceApp, AviaoServiceApp>();
+
+            services.AddDbContext<RedDragonContext>(options => options.UseSqlServer(configuration.GetConnectionString("RedDragonContext")));
 
         }
     }

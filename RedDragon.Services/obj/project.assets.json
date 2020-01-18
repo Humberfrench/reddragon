@@ -14,6 +14,9 @@
       "RedDragon.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RedDragon.DomainValidator": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/RedDragon.Domain.dll": {}
         },
@@ -32,6 +35,16 @@
         },
         "runtime": {
           "bin/placeholder/RedDragon.DomainValidator.dll": {}
+        }
+      },
+      "RedDragon.Extensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RedDragon.Extensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RedDragon.Extensions.dll": {}
         }
       }
     }
@@ -77,12 +90,18 @@
       "type": "project",
       "path": "../RedDragon.DomainValidator/RedDragon.DomainValidator.csproj",
       "msbuildProject": "../RedDragon.DomainValidator/RedDragon.DomainValidator.csproj"
+    },
+    "RedDragon.Extensions/1.0.0": {
+      "type": "project",
+      "path": "../RedDragon.Extensions/RedDragon.Extensions.csproj",
+      "msbuildProject": "../RedDragon.Extensions/RedDragon.Extensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "RedDragon.Domain >= 1.0.0",
-      "RedDragon.DomainValidator >= 1.0.0"
+      "RedDragon.DomainValidator >= 1.0.0",
+      "RedDragon.Extensions >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -120,6 +139,9 @@
             },
             "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {
               "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj"
+            },
+            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj": {
+              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj"
             }
           }
         }

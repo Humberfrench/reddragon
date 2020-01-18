@@ -8,6 +8,7 @@ using RedDragon.Repository.Context;
 using RedDragon.Domain.Inteface.Repository;
 using RedDragon.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace RedDragon.Repository
 {
@@ -15,21 +16,17 @@ namespace RedDragon.Repository
     {
         protected DbSet<TEntity> DbSet;
         private readonly RedDragonContext Context;
+        private readonly IContextManager contextManager;
 
         public BaseRepository(IContextManager contextManager)
         {
+            this.contextManager = contextManager;
             this.Context = contextManager.GetContext();
             this.DbSet = Context.Set<TEntity>();
-
         }
 
-        ////public IDbConnection Connection
-        ////{
-        ////    get
-        ////    {
-        ////        return new SqlConnection(GetConnectionString("RedDragonConn").ConnectionString);
-        ////    }
-        ////}
+        //for dapper
+        public IDbConnection Connection => new SqlConnection(contextManager.GetConnectionString);
 
         public virtual void Adicionar(TEntity obj)
         {

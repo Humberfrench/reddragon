@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 
 namespace RedDragon.DomainValidator
 {
@@ -8,6 +9,8 @@ namespace RedDragon.DomainValidator
     public class ValidationResult
     {
         private readonly List<ValidationError> errors = new List<ValidationError>();
+
+        public HttpStatusCode StatusCode { get; set; }
 
         public void Add(ValidationError error)
         {

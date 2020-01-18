@@ -1,0 +1,8 @@
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.deps.json
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.AssemblyInfo.cs
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.csprojAssemblyReference.cache
