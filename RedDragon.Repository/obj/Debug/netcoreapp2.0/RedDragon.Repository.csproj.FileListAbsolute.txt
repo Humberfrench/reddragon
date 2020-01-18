@@ -1,0 +1,13 @@
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.AssemblyInfo.cs
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.Repository.deps.json
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.Repository.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.Domain.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.DomainValidator.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.DomainValidator.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.Domain.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.csproj.CopyComplete
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\bin\Debug\netcoreapp2.0\RedDragon.Repository.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp2.0\RedDragon.Repository.pdb

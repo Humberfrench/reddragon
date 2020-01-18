@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "RedDragon.Domain/1.0.0": {
+        "runtime": {
+          "RedDragon.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RedDragon.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

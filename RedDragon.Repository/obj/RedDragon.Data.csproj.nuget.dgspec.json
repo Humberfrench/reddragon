@@ -1,0 +1,197 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Data\\RedDragon.Data.csproj": {}
+  },
+  "projects": {
+    "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Data\\RedDragon.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Data\\RedDragon.Data.csproj",
+        "projectName": "RedDragon.Data",
+        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Data\\RedDragon.Data.csproj",
+        "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
+        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\RedDragon.DomainValidator.csproj": {
+                "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\RedDragon.DomainValidator.csproj"
+              },
+              "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\RedDragon.Domain.csproj": {
+                "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\RedDragon.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\RedDragon.DomainValidator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\RedDragon.DomainValidator.csproj",
+        "projectName": "RedDragon.DomainValidator",
+        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\RedDragon.DomainValidator.csproj",
+        "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
+        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.DomainValidator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\RedDragon.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\RedDragon.Domain.csproj",
+        "projectName": "RedDragon.Domain",
+        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\RedDragon.Domain.csproj",
+        "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
+        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon 2\\Fred.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

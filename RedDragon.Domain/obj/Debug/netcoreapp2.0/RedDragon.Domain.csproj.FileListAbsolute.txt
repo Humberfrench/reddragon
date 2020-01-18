@@ -1,0 +1,8 @@
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\bin\Debug\netcoreapp2.0\RedDragon.Domain.deps.json
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\bin\Debug\netcoreapp2.0\RedDragon.Domain.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\bin\Debug\netcoreapp2.0\RedDragon.Domain.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\obj\Debug\netcoreapp2.0\RedDragon.Domain.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\obj\Debug\netcoreapp2.0\RedDragon.Domain.AssemblyInfo.cs
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\obj\Debug\netcoreapp2.0\RedDragon.Domain.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\obj\Debug\netcoreapp2.0\RedDragon.Domain.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Domain\obj\Debug\netcoreapp2.0\RedDragon.Domain.csprojAssemblyReference.cache

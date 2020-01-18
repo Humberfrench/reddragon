@@ -1,11 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.3.0-beta3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RedDragon.DomainValidator\RedDragon.DomainValidator.csproj" />
+    <ProjectReference Include="..\RedDragon.Domain\RedDragon.Domain.csproj" />
+    <ProjectReference Include="..\RedDragon.Repository\RedDragon.Repository.csproj" />
   </ItemGroup>
 
 </Project>

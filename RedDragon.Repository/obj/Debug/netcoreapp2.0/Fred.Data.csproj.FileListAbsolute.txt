@@ -1,0 +1,15 @@
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.Data.deps.json
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.Data.dll
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.Data.pdb
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.Domain.dll
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.DomainValidator.dll
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.DomainValidator.pdb
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Fred.Domain.pdb
+C:\Humberto\Projetos\Fred\Fred.Data\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.csproj.CoreCompileInputs.cache
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.AssemblyInfoInputs.cache
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.AssemblyInfo.cs
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.dll
+C:\Humberto\Projetos\Fred\Fred.Data\obj\Debug\netcoreapp2.0\Fred.Data.pdb

@@ -1,0 +1,8 @@
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\bin\Debug\netcoreapp2.0\RedDragon.DomainValidator.deps.json
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\bin\Debug\netcoreapp2.0\RedDragon.DomainValidator.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\bin\Debug\netcoreapp2.0\RedDragon.DomainValidator.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp2.0\RedDragon.DomainValidator.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp2.0\RedDragon.DomainValidator.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp2.0\RedDragon.DomainValidator.AssemblyInfo.cs
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp2.0\RedDragon.DomainValidator.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp2.0\RedDragon.DomainValidator.pdb

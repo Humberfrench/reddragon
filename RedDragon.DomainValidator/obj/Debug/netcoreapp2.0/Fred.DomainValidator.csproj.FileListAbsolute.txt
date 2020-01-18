@@ -1,0 +1,9 @@
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\bin\Debug\netcoreapp2.0\Fred.DomainValidator.deps.json
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\bin\Debug\netcoreapp2.0\Fred.DomainValidator.dll
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\bin\Debug\netcoreapp2.0\Fred.DomainValidator.pdb
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.csproj.CoreCompileInputs.cache
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.AssemblyInfoInputs.cache
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.AssemblyInfo.cs
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.dll
+C:\Humberto\Projetos\Fred\Fred.DomainValidator\obj\Debug\netcoreapp2.0\Fred.DomainValidator.pdb

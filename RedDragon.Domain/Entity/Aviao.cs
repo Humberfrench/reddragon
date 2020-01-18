@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 
 namespace RedDragon.Domain.Entity
 {
@@ -8,6 +9,5 @@ namespace RedDragon.Domain.Entity
         public string Modelo { get; set; }
         public int QuantidadeDePassageiros { get; set; }
         public DateTime DataCriacao { get; set; }
-
     }
 }
