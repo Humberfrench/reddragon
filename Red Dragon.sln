@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedDragon.Ioc", "RedDragon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedDragon.Extensions", "RedDragon.Extensions\RedDragon.Extensions.csproj", "{4C6028A3-6846-42CB-AB08-0373D94ABE63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedDragon.Web", "RedDragon.Web\RedDragon.Web.csproj", "{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{4C6028A3-6846-42CB-AB08-0373D94ABE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C6028A3-6846-42CB-AB08-0373D94ABE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C6028A3-6846-42CB-AB08-0373D94ABE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{5244F25D-FEA6-4AC0-8457-A7729014C334} = {A1F9C2BB-B4BD-47E9-A157-7CA891CFEF27}
 		{8C313333-62CD-49D9-85F6-8DF246CB486C} = {6FEB4212-0CF0-4F91-9698-90A28A1BF5CC}
 		{4C6028A3-6846-42CB-AB08-0373D94ABE63} = {6FEB4212-0CF0-4F91-9698-90A28A1BF5CC}
+		{DF1E990D-A397-4F1E-A1AF-1EB2BF3825FB} = {53BAA812-86FD-4256-A813-E29C90FDDDD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4765118-07B3-4ECB-87FD-C95838AD1FA4}
