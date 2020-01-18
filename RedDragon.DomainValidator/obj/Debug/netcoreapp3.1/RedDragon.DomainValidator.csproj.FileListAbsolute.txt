@@ -5,4 +5,3 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netco
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.csprojAssemblyReference.cache

@@ -23,6 +23,18 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RedDragon.Application\RedDragon.Application.csproj" />
+    <ProjectReference Include="..\RedDragon.DomainValidator\RedDragon.DomainValidator.csproj" />
+    <ProjectReference Include="..\RedDragon.Ioc\RedDragon.Ioc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\src\app\aviao\aviao-edit.component.ts">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">

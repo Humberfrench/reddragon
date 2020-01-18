@@ -1,12 +1,10 @@
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Ioc.deps.json
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Ioc.dll
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.csprojAssemblyReference.cache
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfoInputs.cache
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Ioc.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Application.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Domain.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Repository.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Services.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Application.pdb
@@ -14,8 +12,10 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\Red
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Repository.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Services.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.csproj.CopyComplete
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\obj\Debug\netcoreapp3.1\RedDragon.Ioc.pdb
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Ioc\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb

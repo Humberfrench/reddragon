@@ -1,0 +1,28 @@
+<h1 id="tableLabel">Aviões</h1>
+
+<p>Lista de Aviões</p>
+
+<p *ngIf="!aviaos"><em>Carregando...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="aviaos">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Modelo</th>
+      <th>Passageiros</th>
+      <th>Criação</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let aviao of aviaos">
+      <td>{{ aviao.aviaoId }}</td>
+      <td>{{ aviao.modelo }}</td>
+      <td>{{ aviao.quantidadeDePassageiros }}</td>
+      <td>{{ aviao.dataCriacao }}</td>
+      <td><a href="" class="btn btn-success">Edit</a></td>
+      <td><a href="" class="btn btn-danger">Delete</a></td>
+    </tr>
+  </tbody>
+</table>

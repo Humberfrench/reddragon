@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace RedDragon.Web
 {
+    using static Ioc.Bootstraper;
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -26,6 +27,9 @@ namespace RedDragon.Web
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            //container IOC and Contexts
+            Initializer(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

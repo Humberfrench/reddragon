@@ -3,13 +3,13 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Services.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Domain.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Domain.pdb
+D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.csprojAssemblyReference.cache
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.AssemblyInfoInputs.cache
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.csproj.CopyComplete
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\obj\Debug\netcoreapp3.1\RedDragon.Services.pdb
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Services\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
