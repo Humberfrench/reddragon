@@ -28,7 +28,7 @@ namespace RedDragon.Api.Controllers
         [ProducesResponseType(StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet()]
+        [HttpGet("ObterTodos")]
         public ActionResult<IEnumerable<AviaoViewModel>> ObterTodos()
         {
             var retorno = aviaoServiceApp.ObterTodos();
@@ -56,7 +56,7 @@ namespace RedDragon.Api.Controllers
         [ProducesResponseType(StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPost()]
+        [HttpPost("Gravar")]
         public ActionResult<ValidationResult> Gravar(AviaoViewModel aviao)
         {
             var retorno = aviaoServiceApp.Gravar(aviao);
@@ -70,7 +70,7 @@ namespace RedDragon.Api.Controllers
         [ProducesResponseType(StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPost("{id}")]
+        [HttpPost("Excluir/{id}")]
         public ActionResult<ValidationResult> Excluir(int id)
         {
             var retorno = aviaoServiceApp.Excluir(id);
@@ -85,7 +85,7 @@ namespace RedDragon.Api.Controllers
         [ProducesResponseType(StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("{id}")]
+        [HttpGet("Obter/{id}")]
         public ActionResult<AviaoViewModel> ObterPorId(int id)
         {
             var retorno = aviaoServiceApp.ObterPorId(id);

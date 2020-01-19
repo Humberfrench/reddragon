@@ -21,8 +21,8 @@
       <td>{{ aviao.modelo }}</td>
       <td>{{ aviao.quantidadeDePassageiros }}</td>
       <td>{{ aviao.dataCriacao }}</td>
-      <td><a href="aviao-edit.html?id={{ aviao.aviaoId }}" class="btn btn-success">Edit</a></td>
-      <td><a href="" class="btn btn-danger">Delete</a></td>
+      <td><a [routerLink]="['/aviao-edit', aviao.aviaoId ]" class="btn btn-success">Edit</a></td>
+      <td><button type="button" class="btn btn-danger" (click)="delete([ aviao.aviaoId ])">Delete</button></td>
     </tr>
   </tbody>
 </table>

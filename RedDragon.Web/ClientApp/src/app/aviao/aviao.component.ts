@@ -13,12 +13,16 @@ import { HttpClient } from '@angular/common/http';
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string)
   {
-    http.get<Aviao[]>(baseUrl + 'aviao').subscribe(result =>
+    http.get<Aviao[]>(baseUrl + 'aviao/ObterTodos').subscribe(result =>
     {
       this.aviaos = result;
     }, error => console.error(error));
   }
 
+  public delete(id)
+  {
+    alert(id);
+  }
 }
 
 interface Aviao
