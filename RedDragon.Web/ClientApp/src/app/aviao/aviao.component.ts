@@ -10,6 +10,8 @@ import { HttpClient } from '@angular/common/http';
  export class AviaoComponent
 {
   public aviaos: Aviao[];
+  httpDados: HttpClient;
+  baseUrlApi: string;
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string)
   {
@@ -17,12 +19,17 @@ import { HttpClient } from '@angular/common/http';
     {
       this.aviaos = result;
     }, error => console.error(error));
-  }
+    this.httpDados = http;
+    this.baseUrlApi = baseUrl;
+}
 
-  public delete(id)
+  onDelete(id)
   {
-    alert(id);
-  }
+    //alert(id);
+    this.httpDados.post(this.baseUrlApi + 'aviao/excluir' + id, null).subscribe(result =>
+    {
+    }, error => console.error(error));
+}
 }
 
 interface Aviao

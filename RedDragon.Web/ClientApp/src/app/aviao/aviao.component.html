@@ -3,6 +3,7 @@
 <p>Lista de Aviões</p>
 
 <p *ngIf="!aviaos"><em>Carregando...</em></p>
+<p class="text-right"><a [routerLink]="['/aviao-edit', 0 ]" class="btn btn-success">Novo Avião</a></p>
 
 <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="aviaos">
   <thead>
@@ -21,8 +22,8 @@
       <td>{{ aviao.modelo }}</td>
       <td>{{ aviao.quantidadeDePassageiros }}</td>
       <td>{{ aviao.dataCriacao }}</td>
-      <td><a [routerLink]="['/aviao-edit', aviao.aviaoId ]" class="btn btn-success">Edit</a></td>
-      <td><button type="button" class="btn btn-danger" (click)="delete([ aviao.aviaoId ])">Delete</button></td>
+      <td><a [routerLink]="['/aviao-edit', aviao.aviaoId ]" class="btn btn-success">Editar</a></td>
+      <td><button type="button" class="btn btn-danger" (click)="onDelete()">Excluir</button></td>
     </tr>
   </tbody>
 </table>

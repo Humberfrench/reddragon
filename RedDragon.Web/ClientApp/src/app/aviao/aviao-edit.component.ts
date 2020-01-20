@@ -1,6 +1,6 @@
 import { Component, Inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { first } from "rxjs/operators";
 //import { User } from "../../model/user.model";
@@ -18,13 +18,18 @@ export class AviaoEditComponent
   httpDados: HttpClient;
   baseUrlApi: string;
 
-  constructor(private formBuilder: FormBuilder, private router: Router,
-    http: HttpClient, @Inject('BASE_URL') baseUrl: string, id: number)
+  constructor(private formBuilder: FormBuilder, private route: ActivatedRoute,
+    http: HttpClient, @Inject('BASE_URL') baseUrl: string)
   {
-    http.get<Aviao>(baseUrl + 'aviao/Obter/' + id).subscribe(result =>
+
+    this.route.paramMap.subscribe(params =>
     {
-      this.aviao = result;
-    }, error => console.error(error));
+      http.get<Aviao>(baseUrl + 'aviao/Obter/' + params.get('aviaoId')).subscribe(result =>
+      {
+        this.aviao = result;
+        this.editForm.setValue(this.aviao);
+      }, error => console.error(error));
+    });
 
     this.httpDados = http;
     this.baseUrlApi = baseUrl;
@@ -37,11 +42,11 @@ export class AviaoEditComponent
       return;
     }
 
-
     const aviaoEdit = {
       aviaoId: this.editForm.controls.id.value,
       modelo: this.editForm.controls.modelo.value,
-      quantidadeDePassageiros: this.editForm.controls.quantidadeDePassageiros.value
+      quantidadeDePassageiros: this.editForm.controls.quantidadeDePassageiros.value,
+      dataCriacao: this.editForm.controls.dataCriacao.value
     } as Aviao;
 
     this.httpDados.post<Aviao>(this.baseUrlApi + 'aviao/Gravar', aviaoEdit).subscribe(result =>
@@ -53,10 +58,14 @@ export class AviaoEditComponent
 
   ngOnInit()
   {
+
     this.editForm = this.formBuilder.group({
+      aviaoId: ['',],
       modelo: ['', Validators.compose([Validators.required])],
-      quantidadeDePassageiros: ['', Validators.required]
+      quantidadeDePassageiros: ['', Validators.required],
+      dataCriacao: ['',]
     });
+
   }
 
 }
@@ -66,5 +75,5 @@ interface Aviao
   aviaoId: number;
   modelo: string;
   quantidadeDePassageiros: number;
-  dateTime: string;
+  dataCriacao: string;
 }
