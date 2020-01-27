@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {}
+    "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj": {
+    "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj",
+        "projectUniqueName": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj",
         "projectName": "RedDragon.DomainValidator",
-        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj",
+        "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\obj\\",
+        "outputPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,21 +67,23 @@
         }
       }
     },
-    "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {
+    "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj",
         "projectName": "RedDragon.Domain",
-        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj",
+        "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\obj\\",
+        "outputPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -91,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj": {
-                "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj"
+              "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj": {
+                "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.DomainValidator\\RedDragon.DomainValidator.csproj"
               }
             }
           }

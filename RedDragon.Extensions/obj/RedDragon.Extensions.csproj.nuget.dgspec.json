@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj": {}
+    "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj": {}
   },
   "projects": {
-    "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj": {
+    "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj",
+        "projectUniqueName": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj",
         "projectName": "RedDragon.Extensions",
-        "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj",
+        "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Extensions\\RedDragon.Extensions.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Extensions\\obj\\",
+        "outputPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

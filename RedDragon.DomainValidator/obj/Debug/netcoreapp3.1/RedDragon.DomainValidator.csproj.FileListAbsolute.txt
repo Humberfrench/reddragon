@@ -5,3 +5,11 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netco
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.deps.json
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.AssemblyInfoInputs.cache
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.AssemblyInfo.cs
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.DomainValidator\obj\Debug\netcoreapp3.1\RedDragon.DomainValidator.csprojAssemblyReference.cache

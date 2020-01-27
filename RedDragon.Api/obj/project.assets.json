@@ -2615,10 +2615,7 @@
         },
         "runtime": {
           "bin/placeholder/RedDragon.Application.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "RedDragon.Domain/1.0.0": {
         "type": "project",
@@ -2671,10 +2668,7 @@
         },
         "runtime": {
           "bin/placeholder/RedDragon.Ioc.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "RedDragon.Repository/1.0.0": {
         "type": "project",
@@ -4203,6 +4197,7 @@
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -4229,6 +4224,7 @@
       "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -4930,6 +4926,7 @@
       "path": "system.composition/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "system.composition.1.0.31.nupkg.sha512",
@@ -4957,6 +4954,7 @@
       "path": "system.composition.convention/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Convention.dll",
@@ -4971,6 +4969,7 @@
       "path": "system.composition.hosting/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Hosting.dll",
@@ -4999,6 +4998,7 @@
       "path": "system.composition.typedparts/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.TypedParts.dll",
@@ -5975,7 +5975,6 @@
       "path": "system.net.http/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/Xamarinmac20/_._",
@@ -7235,7 +7234,6 @@
       "path": "system.runtime.serialization.json/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8590,23 +8588,26 @@
   },
   "packageFolders": {
     "C:\\Users\\humbe\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Api\\RedDragon.Api.csproj",
+      "projectUniqueName": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Api\\RedDragon.Api.csproj",
       "projectName": "RedDragon.Api",
-      "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Api\\RedDragon.Api.csproj",
+      "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Api\\RedDragon.Api.csproj",
       "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-      "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Api\\obj\\",
+      "outputPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8618,8 +8619,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj": {
-              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj"
+            "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj": {
+              "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj"
             }
           }
         }

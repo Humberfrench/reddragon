@@ -4323,7 +4323,6 @@
       "path": "system.runtime.serialization.json/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5406,23 +5405,26 @@
   },
   "packageFolders": {
     "C:\\Users\\humbe\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj",
+      "projectUniqueName": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj",
       "projectName": "RedDragon.Ioc",
-      "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj",
+      "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Ioc\\RedDragon.Ioc.csproj",
       "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-      "outputPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Ioc\\obj\\",
+      "outputPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\humbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5434,17 +5436,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Application\\RedDragon.Application.csproj": {
-              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Application\\RedDragon.Application.csproj"
+            "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Application\\RedDragon.Application.csproj": {
+              "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Application\\RedDragon.Application.csproj"
             },
-            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {
-              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Domain\\RedDragon.Domain.csproj"
+            "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj": {
+              "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Domain\\RedDragon.Domain.csproj"
             },
-            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Repository\\RedDragon.Repository.csproj": {
-              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Repository\\RedDragon.Repository.csproj"
+            "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Repository\\RedDragon.Repository.csproj": {
+              "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Repository\\RedDragon.Repository.csproj"
             },
-            "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Services\\RedDragon.Services.csproj": {
-              "projectPath": "D:\\Desenvolvimento\\Sistemas\\Red Dragon\\RedDragon.Services\\RedDragon.Services.csproj"
+            "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Services\\RedDragon.Services.csproj": {
+              "projectPath": "C:\\Users\\humbe\\OneDrive\\Angular\\RedDragon\\RedDragon.Services\\RedDragon.Services.csproj"
             }
           }
         }

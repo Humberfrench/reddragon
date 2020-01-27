@@ -23,7 +23,7 @@ namespace RedDragon.Repository.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=.\Web17;Database=RedDragon;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer(@"Server=.\Web16;Database=RedDragon;Trusted_Connection=True;");
             }
         }
 

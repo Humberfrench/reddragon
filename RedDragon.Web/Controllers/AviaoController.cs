@@ -11,7 +11,7 @@ using RedDragon.DomainValidator;
 
 namespace RedDragon.Api.Controllers
 {
-    [Route("[controller]")]
+    [Route("aviao")]
     [ApiController]
     public class AviaoController : BaseController
     {
@@ -57,7 +57,7 @@ namespace RedDragon.Api.Controllers
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost("Gravar")]
-        public ActionResult<ValidationResult> Gravar(AviaoViewModel aviao)
+        public ActionResult<ValidationResult> Gravar([FromBody] AviaoViewModel aviao)
         {
             var retorno = aviaoServiceApp.Gravar(aviao);
             return ReturnHttpResponseMessage(retorno);

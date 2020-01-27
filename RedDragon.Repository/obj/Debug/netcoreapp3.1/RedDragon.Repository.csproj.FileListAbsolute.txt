@@ -11,3 +11,16 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.csproj.CopyComplete
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.Repository.deps.json
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.Repository.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.Repository.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.Domain.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.DomainValidator.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\bin\Debug\netcoreapp3.1\RedDragon.Domain.pdb
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.csprojAssemblyReference.cache
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.AssemblyInfoInputs.cache
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.AssemblyInfo.cs
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.csproj.CopyComplete
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.dll
+C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Repository\obj\Debug\netcoreapp3.1\RedDragon.Repository.pdb
