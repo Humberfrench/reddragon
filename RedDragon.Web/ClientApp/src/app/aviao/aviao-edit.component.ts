@@ -24,8 +24,8 @@ export class AviaoEditComponent
 
 
   constructor(private formBuilder: FormBuilder, private route: ActivatedRoute,
-    http: HttpClient, @Inject('BASE_URL') baseUrl: string, private datePipe: DatePipe,
-    private filterValues: filter)
+    http: HttpClient, @Inject('BASE_URL') baseUrl: string, private datePipe: DatePipe)//,
+    //private filterValues: filter)
   {
     this.hoje = Date();
     this.datePipeValue = datePipe;
