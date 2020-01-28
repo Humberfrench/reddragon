@@ -33,7 +33,7 @@ namespace RedDragon.Repository.UnitOfWork
         {
             try
             {
-                this.dbContext.SaveChanges();
+                var dados = this.dbContext.SaveChanges();
             }
             //EntityValidationException
             //catch (Microsoft.EntityFrameworkCore.DbUpdateException   exValidation)
