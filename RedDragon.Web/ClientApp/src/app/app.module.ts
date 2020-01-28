@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -26,6 +27,7 @@ import { AviaoEditComponent } from './aviao/aviao-edit.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    //DatePipe,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -33,6 +35,9 @@ import { AviaoEditComponent } from './aviao/aviao-edit.component';
       { path: 'aviao', component: AviaoComponent },
       { path: 'aviao-edit/:aviaoId', component: AviaoEditComponent },
     ])
+  ],
+  exports: [
+    DatePipe,
   ],
   providers: [],
   bootstrap: [AppComponent]

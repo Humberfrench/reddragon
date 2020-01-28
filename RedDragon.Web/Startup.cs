@@ -73,7 +73,7 @@ namespace RedDragon.Web
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
-                    spa.Options.StartupTimeout = TimeSpan.FromSeconds(200); // <-- add this line
+                    spa.Options.StartupTimeout = TimeSpan.FromSeconds(2000); // <-- add this line
                 }
             });
         }

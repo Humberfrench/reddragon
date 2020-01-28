@@ -1,13 +1,15 @@
 import { Component, Inject, Injectable } from '@angular/core';
+import { DatePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { first } from "rxjs/operators";
+import { filter, first} from 'rxjs/operators';
 //import { User } from "../../model/user.model";
 
 @Component({
   selector: 'app-aviao-edit',
-  templateUrl: './aviao-edit.component.html'
+  templateUrl: './aviao-edit.component.html',
+  providers: [DatePipe]
 })
 
 @Injectable()
@@ -17,10 +19,18 @@ export class AviaoEditComponent
   editForm: FormGroup;
   httpDados: HttpClient;
   baseUrlApi: string;
+  datePipeValue: DatePipe;
+  hoje = Date();
+
 
   constructor(private formBuilder: FormBuilder, private route: ActivatedRoute,
-    http: HttpClient, @Inject('BASE_URL') baseUrl: string)
+    http: HttpClient, @Inject('BASE_URL') baseUrl: string, private datePipe: DatePipe,
+    private filterValues: filter)
   {
+    this.hoje = Date();
+    this.datePipeValue = datePipe;
+
+    this.hoje = this.datePipeValue.transform(this.hoje, "yyyyMMdd"); // Format: dd/MM/yyyy OR dd-MM-yyyy OR yyyy-MM-dd
 
     this.editForm = this.formBuilder.group({
       aviaoId: ['',],
@@ -29,14 +39,26 @@ export class AviaoEditComponent
       dataCriacao: ['',]
     });
 
+    this.aviao = {
+      aviaoId: 0,
+      modelo: '',
+      quantidadeDePassageiros: 0,
+      dataCriacao: this.datePipeValue.transform(this.hoje, "dd/MM/yyyy")
+    } as Aviao;
+
+    this.editForm.setValue(this.aviao);
+    
+    //var id = this.route.queryParams.filter(params => params.aviaoId);
+
     this.route.paramMap.subscribe(params =>
     {
       http.get<Aviao>(baseUrl + 'aviao/Obter/' + params.get('aviaoId')).subscribe(result =>
       {
-        if (result !== null) { 
-        this.aviao = result;
-        this.editForm.setValue(this.aviao);
-      }
+        if (result !== null)
+        {
+          this.aviao = result;
+          this.editForm.setValue(this.aviao);
+        }
       }, error => console.error(error));
     });
 
@@ -58,13 +80,12 @@ export class AviaoEditComponent
       return;
     }
 
-    var hoje = Date();
-    
+
     var defaultValue = 0;
     var aviaoId: number = this.editForm.controls.aviaoId.value === '' ? 0 : this.editForm.controls.aviaoId.value.toInt32(defaultValue);
     var modelo = this.editForm.controls.modelo.value
     var quantidadeDePassageiros: number = Number(this.editForm.controls.quantidadeDePassageiros.value);
-    var dataCriacao = this.editForm.controls.dataCriacao.value === '' ?  null :  this.editForm.controls.dataCriacao.value
+    var dataCriacao = this.editForm.controls.dataCriacao.value === '' ? hoje : this.editForm.controls.dataCriacao.value
 
     const aviaoEdit = {
       aviaoId: aviaoId,
@@ -78,8 +99,8 @@ export class AviaoEditComponent
       this.aviao = result;
     }, error =>
     {
-        console.error(error);
-        //alert(error);
+      console.error(error);
+      //alert(error);
     }
     );
 
