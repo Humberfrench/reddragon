@@ -16,17 +16,19 @@ namespace RedDragon.Ioc
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Mvc.Infrastructure;
 
     public static class Bootstraper
     {
         public static void Initializer(IServiceCollection services, IConfiguration configuration)
         {
 
-            
+
             //Services
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton<IContextManager, ContextManager>();
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IContextManager, ContextManager>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             //services.AddScoped<IConfiguration, ConfigurationSection>();
             //services.AddScoped<IConfiguration, ConfigurationRoot>();
             //services.AddScoped<IConfigurationProvider, ConfigurationProvider>();
