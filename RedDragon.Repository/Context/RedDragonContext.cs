@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-//using System.Data.Entity;
+using System;
+using System.IO;
+using Microsoft.EntityFrameworkCore.Metadata;
 using RedDragon.Domain.Entity;
 using static Microsoft.Extensions.Configuration.ConfigurationExtensions;
 
@@ -27,9 +29,18 @@ namespace RedDragon.Repository.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=.\Web17;Database=RedDragon;Trusted_Connection=True;");
-                optionsBuilder.UseLazyLoadingProxies(false);
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+                var connectionString = configuration.GetConnectionString("JimHalpertContext");
+                optionsBuilder.UseSqlServer(connectionString);
             }
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    optionsBuilder.UseSqlServer(@"Server=.\Web17;Database=RedDragon;Trusted_Connection=True;");
+            //    optionsBuilder.UseLazyLoadingProxies(false);
+            //}
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

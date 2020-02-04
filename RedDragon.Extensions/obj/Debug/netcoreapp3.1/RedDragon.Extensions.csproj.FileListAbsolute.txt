@@ -5,7 +5,6 @@ D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.AssemblyInfo.cs
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.dll
 D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
-D:\Desenvolvimento\Sistemas\Red Dragon\RedDragon.Extensions\obj\Debug\netcoreapp3.1\RedDragon.Extensions.csprojAssemblyReference.cache
 C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.deps.json
 C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.dll
 C:\Users\humbe\OneDrive\Angular\RedDragon\RedDragon.Extensions\bin\Debug\netcoreapp3.1\RedDragon.Extensions.pdb
