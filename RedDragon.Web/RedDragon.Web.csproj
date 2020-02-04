@@ -24,9 +24,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\util\interfaces.ts" />
+    <None Remove="ClientApp\src\app\util\util.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RedDragon.Application\RedDragon.Application.csproj" />
     <ProjectReference Include="..\RedDragon.DomainValidator\RedDragon.DomainValidator.csproj" />
     <ProjectReference Include="..\RedDragon.Ioc\RedDragon.Ioc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\util\interfaces.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\util\util.ts" />
   </ItemGroup>
 
   <ItemGroup>

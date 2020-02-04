@@ -3,6 +3,10 @@ import { DatePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+
+//mine
+import { Util } from "../util/util";
+import { Aviao } from "../util/interfaces";
 //import { filter, first} from 'rxjs/operators';
 //import { User } from "../../model/user.model";
 
@@ -15,7 +19,8 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 @Injectable()
 export class AviaoEditComponent
 {
-  public aviao: Aviao;
+  aviao: Aviao;
+  util: Util;
   editForm: FormGroup;
   httpDados: HttpClient;
   baseUrlApi: string;
@@ -28,7 +33,7 @@ export class AviaoEditComponent
   {
     this.hoje = Date();
     this.datePipeValue = datePipe;
-
+    this.util = new Util();
     this.hoje = this.datePipeValue.transform(this.hoje, "yyyy-MM-dd"); // Format: dd/MM/yyyy OR dd-MM-yyyy OR yyyy-MM-dd
 
     this.editForm = this.formBuilder.group({
@@ -73,18 +78,17 @@ export class AviaoEditComponent
       return;
     }
 
-    if (!isNumeric(this.editForm.controls.quantidadeDePassageiros.value))
+    if (!this.util.IsNumeric(this.editForm.controls.quantidadeDePassageiros.value))
     {
       alert('Quantidade de passageiros deve ser numérico');
       return;
     }
-
-
-    var defaultValue = 0;
-    var aviaoId: number = this.editForm.controls.aviaoId.value === '' ? 0 : this.editForm.controls.aviaoId.value.toInt32(defaultValue);
-    var modelo = this.editForm.controls.modelo.value
-    var quantidadeDePassageiros: number = Number(this.editForm.controls.quantidadeDePassageiros.value);
-    var dataCriacao = this.editForm.controls.dataCriacao.value === '' ? this.hoje : this.editForm.controls.dataCriacao.value
+    
+    //var defaultValue = 0;
+    let aviaoId: number = this.editForm.controls.aviaoId.value === '' ? 0 : Number(this.editForm.controls.aviaoId.value);
+    let modelo = this.editForm.controls.modelo.value
+    let quantidadeDePassageiros: number = Number(this.editForm.controls.quantidadeDePassageiros.value);
+    let dataCriacao = this.editForm.controls.dataCriacao.value === '' ? this.hoje : this.editForm.controls.dataCriacao.value
 
     const aviaoEdit = {
       aviaoId: aviaoId,
@@ -101,8 +105,14 @@ export class AviaoEditComponent
       console.error(error);
       //alert(error);
     });
-        alert('Sucesso na inclusão');
-
+    if (aviaoId == 0)
+    {
+      alert(`Sucesso na Gravação do avião: (novo id) - ${modelo}`);
+    }
+    else
+    {
+      alert(`Sucesso na Gravação do avião: ${aviaoId} - ${modelo}`);
+    }
   }
 
   ngOnInit()
@@ -120,15 +130,4 @@ export class AviaoEditComponent
 }
 
 
-function isNumeric(val: any): boolean
-{
-  return !(val instanceof Array) && (val - parseFloat(val) + 1) >= 0;
-}
 
-interface Aviao
-{
-  aviaoId: number;
-  modelo: string;
-  quantidadeDePassageiros: number;
-  dataCriacao: string;
-}
