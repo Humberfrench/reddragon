@@ -1,0 +1,48 @@
+<h1 id="tableLabel">Aviões</h1>
+<div class="user-container">
+  <h2 class="text-center">Pesquisar Avião</h2>
+  <form [formGroup]="editForm">
+    <div class="row">
+      <div class="col-6 sol-sm-6 col-lg-6 col-md-6 col-xl-6">
+        <div class="form-group">
+          <label for="aviaoBusca"><b>Aviões:</b></label>
+          <select class="form-control" id="aviaoBusca" name="aviaoBusca" (change)="onChange($event)">
+            <option *ngFor="let aviao of aviaos" [value]="aviao.aviaoId">
+              {{aviao.modelo}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-6 sol-sm-6 col-lg-6 col-md-6 col-xl-6">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+        <div class="form-group">
+          <label for="modelo"><b>Id:</b></label>
+          <input type="text" formControlName="aviaoId" placeholder="aviaoId" name="aviaoId" class="form-control" id="aviaoId" readonly="readonly">
+        </div>
+      </div>
+      <div class="col-6 sol-sm-6 col-lg-6 col-md-6 col-xl-6">
+        <div class="form-group">
+          <label for="modelo"><b>Modelo:</b></label>
+          <input type="text" formControlName="modelo" placeholder="modelo" name="modelo" class="form-control" id="modelo">
+        </div>
+      </div>
+      <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
+        <div class="form-group">
+          <label for="quantidadeDePassageiros"><b>Passageiros:</b></label>
+          <input formControlName="quantidadeDePassageiros" placeholder="Quantidade De Passageiros" name="quantidadeDePassageiros" class="form-control" id="quantidadeDePassageiros">
+        </div>
+      </div>
+      <div class="col-3 sol-sm-3 col-lg-3 col-md-3 col-xl-3">
+        <div class="form-group">
+          <label for="dataCriacao"><b>Data de Criação:</b></label>
+          <input formControlName="dataCriacao" placeholder="" name="dataCriacao" class="form-control" id="dataCriacao" readonly="readonly">
+        </div>
+      </div>
+    </div>
+    <div class="form-group text-center">
+      <a class="btn btn-primary" [routerLink]="['/aviao' ]">Voltar</a>
+    </div>
+  </form>
+</div>

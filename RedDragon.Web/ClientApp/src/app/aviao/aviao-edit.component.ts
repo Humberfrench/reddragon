@@ -6,7 +6,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 //mine
 import { Util } from "../util/util";
-import { Aviao } from "../util/interfaces";
+import { Aviao } from "../util/aviao.interfaces";
 //import { filter, first} from 'rxjs/operators';
 //import { User } from "../../model/user.model";
 

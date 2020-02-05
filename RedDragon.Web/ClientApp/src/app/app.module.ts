@@ -12,6 +12,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AviaoComponent } from './aviao/aviao.component';
 import { AviaoEditComponent } from './aviao/aviao-edit.component';
+import { AviaoBuscaComponent } from './aviao/aviao-busca.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AviaoEditComponent } from './aviao/aviao-edit.component';
     CounterComponent,
     FetchDataComponent,
     AviaoComponent,
-    AviaoEditComponent
+    AviaoEditComponent,
+    AviaoBuscaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -34,6 +36,7 @@ import { AviaoEditComponent } from './aviao/aviao-edit.component';
       { path: 'counter', component: CounterComponent },
       { path: 'aviao', component: AviaoComponent },
       { path: 'aviao-edit/:aviaoId', component: AviaoEditComponent },
+      { path: 'aviao-busca', component: AviaoBuscaComponent },
     ])
   ],
   exports: [

@@ -1,5 +1,6 @@
 import { Component, Inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Aviao } from "../util/aviao.interfaces";
 
 @Component({
   selector: 'app-aviao',
@@ -7,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 @Injectable()
- export class AviaoComponent
+export class AviaoComponent
 {
   public aviaos: Aviao[];
   httpDados: HttpClient;
@@ -21,7 +22,7 @@ import { HttpClient } from '@angular/common/http';
     }, error => console.error(error));
     this.httpDados = http;
     this.baseUrlApi = baseUrl;
-}
+  }
 
   onDelete(id)
   {
@@ -29,13 +30,5 @@ import { HttpClient } from '@angular/common/http';
     this.httpDados.post(this.baseUrlApi + 'aviao/excluir' + id, null).subscribe(result =>
     {
     }, error => console.error(error));
-}
-}
-
-interface Aviao
-{
-  aviaoId: number;
-  modelo: string;
-  quantidadeDePassageiros: number;
-  dateTime: string;
+  }
 }

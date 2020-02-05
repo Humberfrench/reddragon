@@ -24,7 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\util\interfaces.ts" />
+    <None Remove="ClientApp\src\app\pessoas\pessoas.component.ts" />
+    <None Remove="ClientApp\src\app\util\aviao.interfaces.ts" />
+    <None Remove="ClientApp\src\app\util\pessoa.interface.ts" />
     <None Remove="ClientApp\src\app\util\util.ts" />
   </ItemGroup>
 
@@ -35,7 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\util\interfaces.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\pessoas\pessoas.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\util\aviao.interfaces.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\util\pessoa.interface.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\util\util.ts" />
   </ItemGroup>
 
