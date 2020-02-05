@@ -5,6 +5,7 @@ using System.IO;
 using Microsoft.EntityFrameworkCore.Metadata;
 using RedDragon.Domain.Entity;
 using static Microsoft.Extensions.Configuration.ConfigurationExtensions;
+using static RedDragon.Repository.Maps.AviaoMap;
 
 namespace RedDragon.Repository.Context
 {
@@ -33,7 +34,7 @@ namespace RedDragon.Repository.Context
                    .SetBasePath(Directory.GetCurrentDirectory())
                    .AddJsonFile("appsettings.json")
                    .Build();
-                var connectionString = configuration.GetConnectionString("JimHalpertContext");
+                var connectionString = configuration.GetConnectionString("RedDragonContext");
                 optionsBuilder.UseSqlServer(connectionString);
             }
             //if (!optionsBuilder.IsConfigured)
@@ -45,26 +46,7 @@ namespace RedDragon.Repository.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            modelBuilder.Entity<Aviao>(entity =>
-            {
-                entity.HasKey(e => e.AviaoId);
-                entity.Property(e => e.DataCriacao)
-                      .HasColumnName("DataCriacao")
-                      .HasColumnType("datetime")
-                      .IsRequired();
-
-                entity.Property(e => e.QuantidadeDePassageiros)
-                      .HasColumnName("QuantidadeDePassageiros")
-                      .HasColumnType("int")
-                      .IsRequired();
-
-                entity.Property(e => e.Modelo)
-                      .HasColumnName("Modelo")
-                      .IsRequired()
-                      .HasMaxLength(50)
-                      .IsUnicode(false);
-            });
+            MapAviao(modelBuilder);
 
             OnModelCreatingPartial(modelBuilder);
         }
