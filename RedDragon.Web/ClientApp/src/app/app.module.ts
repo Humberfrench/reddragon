@@ -13,6 +13,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AviaoComponent } from './aviao/aviao.component';
 import { AviaoEditComponent } from './aviao/aviao-edit.component';
 import { AviaoBuscaComponent } from './aviao/aviao-busca.component';
+import { PessoaComponent } from './pessoas/pessoas.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,13 @@ import { AviaoBuscaComponent } from './aviao/aviao-busca.component';
     FetchDataComponent,
     AviaoComponent,
     AviaoEditComponent,
-    AviaoBuscaComponent
+    AviaoBuscaComponent,
+    PessoaComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    //DatePipe,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -37,6 +38,7 @@ import { AviaoBuscaComponent } from './aviao/aviao-busca.component';
       { path: 'aviao', component: AviaoComponent },
       { path: 'aviao-edit/:aviaoId', component: AviaoEditComponent },
       { path: 'aviao-busca', component: AviaoBuscaComponent },
+      { path: 'pessoas', component: PessoaComponent },
     ])
   ],
   exports: [

@@ -56,6 +56,8 @@ namespace RedDragon.Web
 
             app.UseRouting();
 
+            app.UseCors();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -77,5 +79,32 @@ namespace RedDragon.Web
                 }
             });
         }
+
+        //private void ConfigureCors(IApplicationBuilder appBuilder)
+        //{
+        //    appBuilder.UseCors();
+                
+        //        new CorsOptions
+        //    {
+        //        PolicyProvider = new CorsPolicyProvider
+        //        {
+        //            PolicyResolver = context =>
+        //            {
+        //                var policy = new CorsPolicy();
+        //                policy.Headers.Add("Content-Type");
+        //                policy.Headers.Add("Accept");
+        //                policy.Headers.Add("Auth-Token");
+        //                policy.Methods.Add("GET");
+        //                policy.Methods.Add("POST");
+        //                policy.Methods.Add("PUT");
+        //                policy.Methods.Add("DELETE");
+        //                policy.SupportsCredentials = true;
+        //                policy.PreflightMaxAge = 1728000;
+        //                policy.AllowAnyOrigin = true;
+        //                return Task.FromResult(policy);
+        //            }
+        //        }
+        //    });
+        //}
     }
 }
