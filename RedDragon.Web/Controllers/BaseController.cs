@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using RedDragon.DomainValidator;
 using RedDragon.Extensions;
+using RedDragon.Web.Rest;
+using RestSharp;
 
 namespace RedDragon.Api.Controllers
 {
@@ -60,6 +61,88 @@ namespace RedDragon.Api.Controllers
             return this.Ok(retorno);
         }
 
+
+        #region rest
+        protected JsonSerializerSettings MicrosoftDateFormatSettings = new JsonSerializerSettings
+        {
+            DateFormatHandling = DateFormatHandling.MicrosoftDateFormat,
+            DateTimeZoneHandling = DateTimeZoneHandling.Local
+        };
+        public string Endereco { get; set; }
+
+
+        public RestClientDispose CriaRestClient()
+        {
+            var client = new RestClientDispose(Endereco);
+
+            return client;
+        }
+
+
+        protected async Task<T> PostApiMethodAsync<T>(string uri, object model)
+        {
+            using (var restClient = CriaRestClient())
+            {
+                var request = new RestRequest(uri, Method.POST) { RequestFormat = DataFormat.Json };
+
+                request.AddJsonBody(model);
+
+                TaskCompletionSource<IRestResponse> taskCompletion = new TaskCompletionSource<IRestResponse>();
+
+                var handle = restClient.ExecuteAsync(request, r=> taskCompletion.SetResult(r));
+
+                var response = (RestResponse)(await taskCompletion.Task); 
+
+                var retorno = (T)Activator.CreateInstance(typeof(T));
+
+                try
+                {
+                    retorno = JsonConvert.DeserializeObject<T>(response.Content);
+                }
+                catch (Exception)
+                {
+
+                }
+
+                return retorno;
+            }
+        }
+
+        protected async Task<T> GetApiMethodAsync<T>(string uri, Dictionary<string, object> parameters)
+        {
+            using (var restClient = CriaRestClient())
+            {
+                if (parameters != null && parameters.Count > 0)
+                {
+                    uri = parameters.Aggregate(uri, (current, item) => current + ("/" + item.Value));
+                }
+
+                uri += "/";
+
+                var request = new RestRequest(uri, Method.GET);
+
+                TaskCompletionSource<IRestResponse> taskCompletion = new TaskCompletionSource<IRestResponse>();
+
+                var handle = restClient.ExecuteAsync(request, r => taskCompletion.SetResult(r));
+
+                var response = (RestResponse)(await taskCompletion.Task);
+
+
+                var retorno = (T)Activator.CreateInstance(typeof(T));
+                try
+                {
+                    retorno = JsonConvert.DeserializeObject<T>(response.Content);
+                }
+                catch (Exception)
+                {
+
+                }
+
+                return retorno;
+            }
+        }
+
+        #endregion
     }
 
 }
