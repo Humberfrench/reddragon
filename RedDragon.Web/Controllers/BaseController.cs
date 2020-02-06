@@ -10,7 +10,7 @@ using RedDragon.Extensions;
 using RedDragon.Web.Rest;
 using RestSharp;
 
-namespace RedDragon.Api.Controllers
+namespace RedDragon.Web.Controllers
 {
     public abstract class BaseController : ControllerBase
     {
@@ -74,7 +74,7 @@ namespace RedDragon.Api.Controllers
         public RestClientDispose CriaRestClient()
         {
             var client = new RestClientDispose(Endereco);
-
+            
             return client;
         }
 
@@ -83,14 +83,13 @@ namespace RedDragon.Api.Controllers
         {
             using (var restClient = CriaRestClient())
             {
+                
                 var request = new RestRequest(uri, Method.POST) { RequestFormat = DataFormat.Json };
 
-                request.AddJsonBody(model);
-
                 TaskCompletionSource<IRestResponse> taskCompletion = new TaskCompletionSource<IRestResponse>();
-
+                                
                 var handle = restClient.ExecuteAsync(request, r=> taskCompletion.SetResult(r));
-
+                
                 var response = (RestResponse)(await taskCompletion.Task); 
 
                 var retorno = (T)Activator.CreateInstance(typeof(T));

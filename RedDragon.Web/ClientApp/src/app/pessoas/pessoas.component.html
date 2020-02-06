@@ -1,11 +1,67 @@
 <h1 id="tableLabel">Pessoas</h1>
 
-<p>Lista de Pessoas</p>
-
+<div class="card">
+  <div class="card-header"><strong>Pesquisa / Filtro</strong></div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
+        <label for="Sexo"><strong>Escolha o Sexo</strong></label>
+        <select name="Sexo" id="Sexo" class="form-control" (change)="onChange($event)">
+          <option value="todos">Todos</option>
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+        </select>
+      </div>
+      <div class="col-4 sol-sm-4 col-lg-4 col-md-4 col-xl-4">
+        <label for="Sexo"><strong>Filtro Por Nome</strong></label>
+        <input #FiltroNome class="form-control" />
+      </div>
+      <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+        &nbsp;<br />
+        <button name="Pesquisar" id="Pesquisar" class="btn btn-primary" type="button" (click)="filtrarPessoa(FiltroNome.value)">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 <p *ngIf="!pessoas"><em>Carregando...</em></p>
-
-<div class="col-3 sol-sm-3 col-lg-3 col-md-3 col-xl-3" *ngFor="let pessoa of pessoas">
-  <span class="text">{{pessoa.Name.title}}</span>
-  <span class="text">{{pessoa.Name.first}}</span>
-  <span class="text">{{pessoa.Name.last}}</span>
+<div class="row">
+  <div class="col-4 sol-sm-4 col-lg-4 col-md-4 col-xl-4" *ngFor="let pessoa of pessoas">
+    <div class="card">
+      <div class="card-header">{{pessoa.name.title}} {{pessoa.name.last}}</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4 sol-sm-4 col-lg-4 col-md-4 col-xl-4">
+            <img src="{{pessoa.picture.large}}" width="100" />
+          </div>
+          <div class="col-8 sol-sm-8 col-lg-8 col-md-8 col-xl-8">
+            <div><strong>Título: </strong>{{pessoa.name.title}}</div>
+            <div>
+              <strong>Nome: </strong>
+              <span>{{pessoa.name.first}}&nbsp;{{pessoa.name.last}}</span>
+            </div>
+            <div>
+              <strong>Gênero: </strong>
+              <span>{{pessoa.gender}}</span>
+            </div>
+            <div>
+              <strong>Celular: </strong>
+              <span>{{pessoa.cell}}</span>
+            </div>
+            <div>
+              <strong>Telefone: </strong>
+              <span>{{pessoa.phone}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <strong>Email: </strong>
+            <span>{{pessoa.email}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
 </div>

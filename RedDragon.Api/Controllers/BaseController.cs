@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using RedDragon.DomainValidator;
 using RedDragon.Extensions;
 
-namespace RedDragon.Api.Controllers
+namespace RedDragon.Web.Controllers
 {
     public abstract class BaseController : ControllerBase
     {

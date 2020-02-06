@@ -9,7 +9,7 @@ using RedDragon.Application.Interface;
 using RedDragon.Application.ViewModel;
 using RedDragon.DomainValidator;
 
-namespace RedDragon.Api.Controllers
+namespace RedDragon.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

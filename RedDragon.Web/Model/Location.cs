@@ -15,4 +15,3 @@ namespace RedDragon.Web.Model
         public Timezone Timezone { get; set; }
     }
 }
-}

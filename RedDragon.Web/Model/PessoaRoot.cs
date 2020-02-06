@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace RedDragon.Web.Model
 {
-    public class Coordinates
+    public class PessoaRoot
     {
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        public List<Pessoa> Pessoas { get; set; } = new List<Pessoa>();
     }
 }

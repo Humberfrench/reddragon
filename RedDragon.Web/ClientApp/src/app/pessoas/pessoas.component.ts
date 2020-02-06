@@ -1,6 +1,6 @@
 import { Component, Inject, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {  Pessoa } from "../util/pessoa.interface";
+import { Pessoa } from "../util/pessoa.interface";
 //Name, Coordinates, Timezone, Location, Dob, Registered, Picture,
 
 @Component({
@@ -12,22 +12,47 @@ import {  Pessoa } from "../util/pessoa.interface";
 export class PessoaComponent
 {
   public pessoas: Pessoa[];
-  //httpDados: HttpClient;
-  urlApi = "https://storage.googleapis.com/juntossomosmais-code-challenge/input-frontend-apps.json";
+  public todasPessoas: Pessoa[];
+  httpDados: HttpClient;
+  baseUrlApi: string;
 
-  constructor(http: HttpClient)
+  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string)
   {
+    this.baseUrlApi = baseUrl;
+    this.httpDados = http;
 
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin': '*',
-      })
-    };
-    http.get<Pessoa[]>(this.urlApi, httpOptions,).subscribe(result =>
+    http.get<Pessoa[]>(`${baseUrl}ExternalData\\ObterPessoas`).subscribe(result =>
     {
       this.pessoas = result;
+      this.todasPessoas = result;
     }, error => console.error(error));
-    //this.httpDados = http;
+
+  }
+  onChange($event)
+  {
+    let gender: string = $event.currentTarget.value;
+
+    if (gender === 'todos')
+    {
+      this.pessoas = this.todasPessoas;
+      return;
+    }
+
+    let filtro = this.todasPessoas.filter(p => p.gender == gender);
+
+    this.pessoas = filtro;
   }
 
+  filtrarPessoa(value)
+  {
+    if (value === '')
+    {
+      this.pessoas = this.todasPessoas;
+      return;
+    }
+
+    let filtro = this.todasPessoas.filter(p => p.name.first.includes(value));
+
+    this.pessoas = filtro;
+  }
 }

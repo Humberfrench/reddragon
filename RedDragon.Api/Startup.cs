@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace RedDragon.Api
+namespace RedDragon.Web
 {
     using static Ioc.Bootstraper;
     public class Startup
