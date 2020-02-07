@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent {
+export class AppComponent
+{
+  public contagemExterna: number = 0;
   title = 'app';
 }

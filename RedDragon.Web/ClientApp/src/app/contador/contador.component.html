@@ -1,0 +1,21 @@
+<h1>Contador</h1>
+<div class="row">
+  <div class="col-4 sol-sm-4 col-lg-4 col-md-4 col-xl-4">
+    <p>Modelo de contador, variável</p>
+  </div>
+  <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
+    <p aria-live="polite">Número atual: <strong>{{ contagem }}</strong></p>
+  </div>
+  <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
+      <mat-slider min="1" max="1000" step="1" value="1" [(ngModel)]="contagem" thumbLabel="true"></mat-slider>
+  </div>
+  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+    <button class="btn btn-primary" (click)="soma1()">Soma 1</button>
+  </div>
+  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+    <button class="btn btn-primary" (click)="soma10()">Soma 10</button>
+  </div>
+  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+    <button class="btn btn-primary" (click)="somaExterna()">Soma Ext.</button>
+  </div>
+</div>
