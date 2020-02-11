@@ -7,15 +7,28 @@
     <p aria-live="polite">Número atual: <strong>{{ contagem }}</strong></p>
   </div>
   <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
-      <mat-slider min="1" max="1000" step="1" value="1" [(ngModel)]="contagem" thumbLabel="true"></mat-slider>
+    <mat-slider min="1" max="1000" step="1" value="1" [(ngModel)]="contagem" thumbLabel="true"></mat-slider>
   </div>
-  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+  <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
     <button class="btn btn-primary" (click)="soma1()">Soma 1</button>
   </div>
-  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
+  <div class="col-2 sol-sm-2 col-lg-2 col-md-2 col-xl-2">
     <button class="btn btn-primary" (click)="soma10()">Soma 10</button>
   </div>
-  <div class="col-1 sol-sm-1 col-lg-1 col-md-1 col-xl-1">
-    <button class="btn btn-primary" (click)="somaExterna()">Soma Ext.</button>
-  </div>
 </div>
+<form>
+  <div class="row">
+    <div class="col-4 sol-sm-4 col-lg-4 col-md-4 col-xl-4">
+      <p>Auto Complete</p>
+      <mat-form-field>
+        <input type="text" class="form-control" placeholder="Escolha um item" aria-label="Number"
+               [formControl]="myControl" matInput [matAutocomplete]="auto" />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+  </div>
+</form>

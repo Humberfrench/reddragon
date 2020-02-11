@@ -1,17 +1,40 @@
 import { Component } from "@angular/core";
+import { FormControl } from "@angular/forms";
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-contador-component',
   templateUrl: './contador.component.html'
 })
 
-
 export class ContadorComponent
 {
-  public contagem: number = 0;
+  contagem: number = 0;
+  opcao: string;
+  options: string[] = ['One', 'Two', 'Three'];
+  filteredOptions: Observable<string[]>;
+  myControl = new FormControl();
+
   constructor()
   {
+    this.opcao = "";
+  }
 
+  ngOnInit()
+  {
+    this.filteredOptions = this.myControl.valueChanges
+      .pipe(
+        startWith(''),
+        map(value => this._filter(value))
+      );
+  }
+
+  private _filter(value: string): string[]
+  {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
   public soma1()
@@ -37,6 +60,16 @@ export class ContadorComponent
   public somaExterna()
   {
     //contagemExterna += 10;
+  }
+
+  public selecionado()
+  {
+    if (this.opcao == "")
+    {
+      alert("Sem esolha feita");
+      return
+    }
+    alert(this.opcao);
   }
 
 }

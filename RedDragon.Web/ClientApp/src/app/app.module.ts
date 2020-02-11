@@ -5,6 +5,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { MatSliderModule } from '@angular/material/slider'
+import { MatInputModule, MatFormFieldModule, MatAutocompleteModule } from '@angular/material'
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -36,6 +38,11 @@ import { ContadorComponent } from './contador/contador.component';
     FormsModule,
     ReactiveFormsModule,
     MatSliderModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
